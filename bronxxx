@@ -1,0 +1,223 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wave"))()
+local Main = library:Main()
+local Tab = Main:Tab("Money")
+local Tab2 = Main:Tab("Teleports")
+local Section = Tab:Section("Money")
+local Teleports = Tab2:Section("Teleports")
+
+
+Section:Item(
+    "button",
+    "Button",
+    function()
+        library.Warn("Button", "Pressed")
+    end
+)
+
+Teleports:Item(
+    "button",
+    "Safe Area TP",
+    function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(1021.45673, 3.15790796, 1021.06494, 0.0214082785, -7.93630122e-08, 0.99977082, -3.47816069e-08, 1, 8.01259858e-08, -0.99977082, -3.64889949e-08, 0.0214082785)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+library.Warn("Safe Area TP", "Done Teleporting")
+    end
+)
+
+Teleports:Item(
+    "button",
+    "Gun Store TP",
+    function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-850.622742, 3.27221346, -269.109894, 0.999896646, 7.51473905e-08, 0.0143781612, -7.62030865e-08, 1, 7.28757499e-08, -0.0143781612, -7.3963875e-08, 0.999896646)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+library.Warn("Gun Store TP", "Done Teleporting")
+    end
+)
+
+Teleports:Item(
+    "button",
+    "Bank TP",
+    function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-713.747253, 22.3369179, -459.355225, -0.998846352, 1.25483846e-08, -0.0480198748, 7.37109263e-09, 1, 1.07992676e-07, 0.0480198748, 1.07514133e-07, -0.998846352)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+library.Warn("Bank TP", "Done Teleporting")
+    end
+)
+
+Teleports:Item(
+    "button",
+    "Bank Bag TP",
+    function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-958.616028, 4.35634184, -44.6057587, 0.0484775566, 8.81679725e-08, -0.998824298, 4.67043904e-10, 1, 8.82944207e-08, 0.998824298, -4.74679229e-09, 0.0484775566)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+library.Warn("Bank Bag TP", "Done Teleporting")
+    end
+)
+
+Teleports:Item(
+    "button",
+    "Car Dealer TP",
+    function()
+local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(-676.183472, 3.38684559, -657.019226, 0.0549391136, 4.12234371e-08, -0.998489678, -3.83716703e-08, 1, 3.91744983e-08, 0.998489678, 3.61615058e-08, 0.0549391136)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait(0.1)
+pl.CFrame = location
+
+library.Warn("Car Dealer TP", "Done Teleporting")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 500",
+    function()
+    local args = {[1] = "with",[2] = "500"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 500", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 1k",
+    function()
+    local args = {[1] = "with",[2] = "1000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 1k", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 2k",
+    function()
+    local args = {[1] = "with",[2] = "2000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 2k", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 3k",
+    function()
+    local args = {[1] = "with",[2] = "3000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 3k", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 4k",
+    function()
+    local args = {[1] = "with",[2] = "4000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 4k", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Withdraw 5k",
+    function()
+    local args = {[1] = "with",[2] = "5000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Withdrawing 5k", "Done Withdrawing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 500",
+    function()
+    local args = {[1] = "depo",[2] = "500"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 500", "Done Depositing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 1k",
+    function()
+    local args = {[1] = "depo",[2] = "1000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 1k", "Done Depositing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 2k",
+    function()
+    local args = {[1] = "depo",[2] = "2000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 2k", "Done Depositing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 3k",
+    function()
+    local args = {[1] = "depo",[2] = "3000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 3k", "Done Depositing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 4k",
+    function()
+    local args = {[1] = "depo",[2] = "4000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 4k", "Done Depositing")
+    end
+)
+
+Section:Item(
+    "button",
+    "Deposit 5k",
+    function()
+    local args = {[1] = "depo",[2] = "5000"}
+    game:GetService("ReplicatedStorage").BankAction:FireServer(unpack(args))
+
+library.Warn("Depositing 5k", "Done Depositing")
+    end
+)
+
